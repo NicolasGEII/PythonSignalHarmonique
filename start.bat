@@ -1,2 +1,2 @@
 @echo off
-py main_ctk.py
+python main_ctk.py
