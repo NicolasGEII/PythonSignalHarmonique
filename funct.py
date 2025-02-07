@@ -73,7 +73,7 @@ def scie(harm: int, nb_point: int = 10000):
     y = np.sin(x)
 
     for n in range(2, harm + 1):
-        y += np.sin(x*n)/n
+        y +=  ((-1)**i+1) * np.sin(x * array[i])/array[i]
 
 
     #flèche pour T
