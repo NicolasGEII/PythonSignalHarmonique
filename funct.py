@@ -11,7 +11,7 @@ def func_type(func: str, harm: int) -> None:
         case "scie":
             scie(harm)
 
-def carre(harm: int, nb_point: int = 10000):
+def carre(harm: int, nb_point: int = 10000) -> None:
     array = []
     for i in range(0,harm):
         if(i%2)!=0:
@@ -36,7 +36,7 @@ def carre(harm: int, nb_point: int = 10000):
     plt.grid(True)
     plt.show()
 
-def triangle(harm: int, nb_point: int = 10000):
+def triangle(harm: int, nb_point: int = 10000) -> None:
     array = []
     val = True
     for i in range(0,harm):
@@ -68,13 +68,12 @@ def triangle(harm: int, nb_point: int = 10000):
     plt.show()
 
 
-def scie(harm: int, nb_point: int = 10000):
+def scie(harm: int, nb_point: int = 10000) -> None:
     x = np.linspace(-8*np.pi, 8*np.pi, nb_point)
     y = np.sin(x)
 
     for n in range(2, harm + 1):
         y +=  ((-1)**i+1) * np.sin(x * array[i])/array[i]
-
 
     #flèche pour T
     plt.arrow(2*np.pi,-0.5,0,0.5)
@@ -89,9 +88,3 @@ def scie(harm: int, nb_point: int = 10000):
     plt.axis((0,6.5,-2,2))
     plt.grid(True)
     plt.show()
-
-def init():
-    plt.style.use('grayscale')
-    plt.grid(True)
-
-#plt.style.use('grayscale')
