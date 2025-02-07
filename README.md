@@ -14,7 +14,7 @@ https://www.python.org/
 #### pip
 pour l'installer il suffit de lancer la command ci dessous dans un terminal de commande
 ```
-py -m ensurepip --upgrade
+python -m ensurepip --upgrade
 ```
 https://pip.pypa.io/en/stable/installation/
 #### numpy
@@ -33,4 +33,4 @@ pour l'installer il suffit de lancer la command ci dessous dans un terminal de c
 pip install customtkinter
 ```
 ### Lancer l'application
-Pour lancer l'application vous devez executer ""
+Pour lancer l'application vous devez executer le fichier **start.bat**
