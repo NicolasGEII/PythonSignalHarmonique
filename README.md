@@ -1,6 +1,6 @@
 # PythonSignalHarmonique
 Programme en python pour visualiser des signaux carré, Triangle et scie en fonction de leur harmoniques
-## Prés requis
+## Prérequis
  Ce programme requiert :
  - python 3
  - pip (pour installer les packages)
