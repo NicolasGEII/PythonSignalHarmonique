@@ -33,4 +33,4 @@ pour l'installer il suffit de lancer la command ci dessous dans un terminal de c
 pip install customtkinter
 ```
 ### Lancer l'application
-Pour lancer l'application vous devez executer le fichier **start.bat**
+Pour lancer l'application vous devez executer le fichier **start.bat** ou d'éxecuter le script **main_ctk.py** avec **python**
