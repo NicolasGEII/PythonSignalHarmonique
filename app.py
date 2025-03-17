@@ -13,7 +13,7 @@ class App(customtkinter.CTk):
         self.grid_columnconfigure(0)
         self.grid_rowconfigure(0)
         
-        theme, color_theme = "dark", "green"
+        theme, color_theme = "light", "green"
 
         self.x: list
         self.y: list
@@ -42,17 +42,16 @@ class Harm_frame(customtkinter.CTkFrame):
         super().__init__(master)
 
         #### Var ####
-        self.nb_harm: int = 0
+        self.nb_harm: int = 1
 
         # label
-        self.lb_harm = customtkinter.CTkLabel(self, text="Nombre(s) d'harmonique: 0")
+        self.lb_harm = customtkinter.CTkLabel(self, text=f"Nombre(s) d'harmonique: {self.nb_harm}")
         self.lb_harm.grid(row=0, column=0,padx=(20,0), pady=20, sticky="nw")
 
         # slider harmonique
-        self.harm_slide = customtkinter.CTkSlider(self, from_=0, to=100, number_of_steps=100, command=self.slider_event)
-        self.harm_slide.set(0)
+        self.harm_slide = customtkinter.CTkSlider(self, from_=1, to=100, number_of_steps=100, command=self.slider_event)
+        self.harm_slide.set(1)
         self.harm_slide.grid(row=1, column= 0, padx=20, pady=20)
-
 
         self.label = customtkinter.CTkLabel(self, text="Type de fonction: ")
         self.label.grid(row= 2, column=0, padx=(10, 0), pady=10, sticky="nw")

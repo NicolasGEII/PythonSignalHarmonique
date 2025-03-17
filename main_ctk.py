@@ -1,5 +1,3 @@
-## require 
-
 from app import App
 
 def main() -> None:
